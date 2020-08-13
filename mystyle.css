@@ -1,0 +1,98 @@
+.nav{
+    display: flex;
+    position: relative;
+}
+
+.main {
+  height: 100%;
+  padding-left: 25px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 18px; 
+  margin-left: 280px ;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  color: #3b3b3b;
+}
+
+header{
+  color: #000000;
+  border: 3 solid black;
+}
+
+
+.nav .sidebar{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*background-color: rgb(106, 93, 141);*/
+    background-color: rgb(81, 87, 165);
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.nav .sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #d8d8d8;
+    display: block;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-width: auto;
+    margin: 0px;
+    width: auto;
+  }
+
+.nav .sidebar a:hover {
+    color: #ffffff;
+    background-color: rgba(196, 180, 135, 0.267);
+    border-radius: 1px;
+}
+  
+.nav .sidebar h1 {
+    margin-top: 0px;
+    text-align: center;
+    color: #d8d8d8;
+}
+
+.nav .sidebar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.code-box{
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 15px 0px 15px 15px;
+    width: 100%;
+    font-size: medium;
+}
+
+@media screen and (max-width: 850px){
+  .nav .sidebar{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(81, 87, 165);
+    padding: 20px;
+    border-radius: 3px;
+  }
+
+  .nav .sidebar h1{
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 3px;
+  }
+
+  .main {
+    margin-left: -15px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+}
